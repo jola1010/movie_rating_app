@@ -8,7 +8,9 @@
             <span class="grey--text">{{ movie.release_year }} ‧ {{ movie.genre }}</span>
           </div>
         </v-card-title>
-        <h6 class="card-title" v-if="current_user" @click="rate">Rate this movie</h6>
+        <h6 class="card-title" id="rate_movie" v-if="current_user" @click="rate">
+          Rate this movie
+        </h6>
         <v-card-text>
           {{ movie.description }}
         </v-card-text>
